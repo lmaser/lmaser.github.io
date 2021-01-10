@@ -1,0 +1,159 @@
+.container {
+	width: 70em;
+	
+	margin: auto;
+	padding-bottom:2.5em;
+	border: 1px solid;
+}
+
+.fretboard {
+	margin-top: 1.75em;
+    padding-top: 1.75em;
+}
+
+.string {
+	display: -webkit-box;
+	width: 60em;
+	
+}
+
+.fret {
+	width: 2.5em;
+	margin-top: -3.5em;
+	border-bottom: .1em solid #1f1209;
+	height: 3.5em;
+}
+
+.nut {
+	width: 3.5em;
+	margin-top: -3.5em;
+	height: 3.5em;
+	margin-left: .25em;
+}
+
+.note {
+	text-align: center;
+	position: relative;
+	top: 2.75em;
+	border: 1px solid red;
+	background: red;
+	border-radius: 50%;
+	width: 1.5em;
+	height: 1.5em;
+	margin-left: .5em;
+}
+
+.fret_scale {
+	text-align: center;
+	position: relative;
+	top: 2.75em;
+	border: 1px solid gray;
+	background: gray;
+	border-radius: 50%;
+	width: 1.5em;
+	height: 1.5em;
+	margin-left: .5em;
+}
+
+.fret_scale>input {
+	background: transparent;
+	border: none;
+	color: whitesmoke;
+	padding: inherit;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.fret_scale>input:focus {
+	background: transparent;
+	border: none;
+}
+
+.note>input {
+	background: transparent;
+	border: none;
+	color: whitesmoke;
+	padding: inherit;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.note>input:focus {
+	background: transparent;
+	border: none;
+}
+
+.params {
+	BORDER: 1PX SOLID;
+	WIDTH: 70em;
+	margin: auto;
+	margin-bottom: 1em;
+	display: flex;
+}
+
+.params>p{
+	margin: 2em;
+}
+
+.vl {
+	border-left: 3px solid gray;
+	height: 500px;
+	position: relative;
+	top: -1em;
+	height: 2.1em;
+	left: 6.45em;
+}
+
+.vo {
+	border-left: 3px solid gray;
+	height: 500px;
+	position: relative;
+	top: -1em;
+	height: 2.1em;
+	left: 4em;
+}
+
+.blank {
+	opacity: 0;
+}
+
+.border0 {
+	border: 0;
+}
+
+.orange {
+	border: 1px solid orangered;
+	background: orangered;
+}
+
+.string_tune {
+	border: 1px solid grey;
+	background: whitesmoke;
+	
+}
+
+.string_tune>input {
+	color: black;
+	vertical-align: middle;
+}
+
+.string_tune>input:focus {
+	background: transparent;
+	border: none;
+}
+
+.title{
+	BORDER: 1PX SOLID;
+    WIDTH: 70em;
+    margin: auto;
+	margin-bottom: 1em;
+	margin-top: 2em;
+    display: flex;
+}
+
+.title>h2{
+	margin:auto;
+	
+}
