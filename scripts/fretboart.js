@@ -93,7 +93,7 @@ $(document).ready(function() {
     ////intervals to notes 
     if(mode=='notes'){
         frets.each(function( index ) { 
-        $(this).val(notes[(intervals.indexOf($(this).val()))%intervals.length]);  
+        $(this).val(notes[((intervals.indexOf($(this).val()))+string_shift)%intervals.length]);  
         });
     }
 
