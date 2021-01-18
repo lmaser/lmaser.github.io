@@ -10,9 +10,24 @@ $(document).ready(function() {
     
         var intervals=['1','2b','2','3b','3','4','5b','5','6b','6','7b','7']; 
         var notes=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
-                        
-        scale=scale.split(',');
-        tuning=tuning.split(',').reverse();
+                       
+        //scale parser
+        scale=scale.split(' ');
+
+        scale.forEach(function (item, index) {
+            if(item.includes('♯')){
+                scale[index]=(parseInt(item.replace('♯',''))+1)+"b";
+            }
+            if(item.includes('♭')){
+                scale[index]=(parseInt(item.replace('♭',''))-1)+"b";
+            }
+           
+        });
+
+        console.log(scale);
+
+//TUNING PARSER
+        tuning=tuning.split(' ').reverse();
         
         tuning.forEach(function (item, index) {
           $(".fretboard").append("<div class='string' id='string"+index+"'>");
@@ -120,7 +135,18 @@ $(document).ready(function() {
     $(document).on('change keyup paste', '.params', function() {
         
             var tuning=($("#tuning").val());
+
+
             var scale=($("#scale").val());
+/*
+            if($("#color").prop('checked', true)){
+                $("body").css('filter','invert(100%)');
+            }
+*/
+
+$("#scale").val(scale.replace('b','♭'));
+$("#scale").val(scale.replace('#','♯'));
+
             var root_note=($("#root_note").val());
             var number_frets=($("#number_frets").val());
             var mode=($("#mode").val());
@@ -134,7 +160,7 @@ $(document).ready(function() {
         
     });
         
-    generate('E,A,D,G,B,E',12,'E','1,2,3,4,5,6,7','intervals');
+    generate('E A D G B E',12,'E','1 2 3 4 5 6 7','intervals');
     
     });
     

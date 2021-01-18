@@ -1,4 +1,4 @@
-@media only screen and (max-width: 900px){
+@media only screen and (orientation:portrait){
 	body {  
 		  -webkit-transform: rotate(90deg);
 		  -moz-transform: rotate(90deg);
@@ -8,8 +8,7 @@
 		 }
 
  }
-
- @media only screen and (max-width: 1800px){
+ @media only screen and (orientation:landscape){
 	body {  
 		  -webkit-transform: rotate(0deg);
 		  -moz-transform: rotate(0deg);
@@ -20,23 +19,27 @@
 		}
 
 
+.app{
+display: grid;
+}
 
 .container {
-	width: 70em;
+	
 	
 	margin: auto;
-	padding-bottom:2.5em;
+	
 	border: 1px solid;
 }
 
 .fretboard {
-	margin-top: 1.75em;
-    padding-top: 1.75em;
+	
+	padding-top: 2em;
+	padding-right: 1em;
 }
 
 .string {
 	display: -webkit-box;
-	width: 60em;
+	
 	
 }
 
@@ -180,3 +183,40 @@
 	margin:auto;
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown {
+	position: relative;
+	display: flex;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: flex;
+  }
