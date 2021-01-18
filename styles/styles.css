@@ -32,7 +32,8 @@
 
 .container {
 
-
+    display: flex;
+    width: 100%;
 	border: 1px solid;
 }
 
@@ -120,10 +121,8 @@
 
 .params {
 	BORDER: 1PX SOLID;
-	
-	
-	margin-bottom: 1em;
 	display: flex;
+    width: 100%;
 }
 
 .params>p {
@@ -180,8 +179,6 @@
 .title {
 	BORDER: 1PX SOLID;
 	margin: auto;
-	margin-bottom: 1em;
-	margin-top: 2em;
 	display: flex;
 	width: 100%;
 }
