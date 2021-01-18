@@ -13,41 +13,21 @@
 
 <body>
 
-   <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn') && !event.target.matches('input') && !event.target.matches('select')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-      </script>
+
 
 
 <div class='app'>
 
    
    <div class='title'>
-      <h2>FRET<b>BOART</b></h2>
+      <h2>FRETBOART</h2>
    </div>
 
   
      
 
 
-      <div id="myDropdoddwn" class='params dropddown-content'>
+      <div class='params'>
 
 
          <P>Tuning: <input list='tunings' id='tuning' value="E A D G B E" onfocus="this.value=''">
@@ -134,8 +114,8 @@
 
 
 
+
       <div class="container">
-         <button onclick="myFunction()" class="dropbtn">Dropdown</button>
          <div class="fretboard"></div>
       </div>
 
