@@ -5,6 +5,7 @@
 		-o-transform: rotate(90deg);
 		-ms-transform: rotate(90deg);
 		transform: rotate(90deg);
+		
 	}
 
 }
@@ -22,6 +23,13 @@
 
 .app {
 	display: grid;
+	width: 80%;
+	height: 80%;
+	margin: auto;
+}
+
+.grid{
+	display:grid;
 }
 
 .container {
@@ -114,7 +122,7 @@
 
 .params {
 	BORDER: 1PX SOLID;
-	WIDTH: 70em;
+	
 	margin: auto;
 	margin-bottom: 1em;
 	display: flex;
@@ -173,19 +181,17 @@
 
 .title {
 	BORDER: 1PX SOLID;
-	WIDTH: 70em;
 	margin: auto;
 	margin-bottom: 1em;
 	margin-top: 2em;
 	display: flex;
+	width: 100%;
 }
 
 .title>h2 {
 	margin: auto;
 
 }
-
-
 
 
 
@@ -210,7 +216,6 @@
 	width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 0;
     z-index: 1;
 	opacity: 0;
 	margin-top: 2em;
@@ -256,7 +261,9 @@
 .show {
     display: block;
     display: inline-flex;
-    height: -webkit-fill-available;
+	height: -webkit-fill-available;
+	z-index:2;
+
 
 }
 
