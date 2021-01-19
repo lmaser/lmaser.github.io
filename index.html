@@ -30,15 +30,18 @@
       <div class='params'>
      
 
-         <P>Tuning: <input list='tunings' id='tuning' value="E A D G B E" onfocus="this.value=''">
+        <div class='box'> 
+        
+         <input list='tunings' id='tuning' value="" onfocus="this.value=''" placeholder="TUNING">
             <datalist id="tunings">
                <option value="E A D G B E"> Guitar Standard
                <option value="D G C F A D">Guitar 1 Step Down
             </datalist>
 
-            </input> </P>
-         <P>Scale:
-            <input list='scales' name='scale' id='scale' value="1 2 3 4 5 6 7" onfocus="this.value=''">
+            </input> </div>
+
+            <div class='box'>      
+            <input list='scales' name='scale' id='scale' value="" onfocus="this.value=''" placeholder="SCALE">
             <datalist id="scales">
                <option value='1 2 3 4 5 6 7'>Ionian (Major)</option>
                <option value="1 2 3 ♯4 5 6 ♭7"> (Acoustic)
@@ -52,10 +55,11 @@
                <option value="1 ♭2 3 4 5 ♭6 7">(Double Harmonic)
 
             </datalist>
-         </P>
-         <P>
-            Root:
-            <select id="root_note">
+         </input> </div>
+
+         <div class='box'> 
+            <input list='notes' name='root_note' id='root_note' value="" onfocus="this.value=''" placeholder='ROOT'>
+            <datalist id="notes">
                <option value="C">C</option>
                <option value="C#">C#</option>
                <option value="D">D</opion>
@@ -68,11 +72,13 @@
                <option value="A">A</option>
                <option value="A#">A#</option>
                <option value="B">B</option>
-            </select>
-         </P>
-         <P>
-            Frets
-            <select id="number_frets">
+          
+         
+         </datalist>
+      </input> </div>
+      <div class='box'> 
+         <input list='frets' name='number_frets' id='number_frets' value="" onfocus="this.value=''" placeholder='FRETS'>
+         <datalist id="frets">
                <option value="0">0</option>
                <option value="1">1</option>
                <option value="2">2</opion>
@@ -98,16 +104,22 @@
                <option value="22">22</option>
                <option value="23">23</option>
                <option value="24">24</option>
-            </select>
-         </P>
-         <p>
-            Mode
-            <select id="mode">
+           
+         </datalist>
+      </input> </div>
+
+
+      <div class='box'> 
+         <input list='modes' name='mode' id='mode' value="" onfocus="this.value=''" placeholder='MODE'>
+         <datalist id="modes">
+           
                <option value="intervals">Intervals</option>
                <option value="notes">Notes</option>
                <option value="chromatic">Chromatic</option>
-            </select>
-         </p>
+           
+             
+            </datalist>
+         </input> </div>
 
 
       </div>
