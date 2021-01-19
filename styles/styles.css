@@ -53,11 +53,12 @@ input{
 .fretboard {
 
 	padding-top: 2em;
-	padding-right: 1em;
+	padding-right: 2em;
 	left: 0;
     right: 0;
     margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+	
 }
 
 .string {
