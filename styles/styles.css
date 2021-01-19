@@ -26,15 +26,23 @@
 	width: 80%;
 	height: 80%;
 	margin: auto;
+	padding-top: 1em;
+	padding-bottom:1em;
+	margin-left: auto;
+    margin-right: auto;
 }
 
-
+input{
+	font-family: 'Noto Sans JP', sans-serif !important;
+}
 
 .container {
 
     display: flex;
     width: 100%;
 	border: 1px solid;
+	padding-top:1em;
+	padding-bottom:1em;
 }
 
 .fretboard {
@@ -95,7 +103,7 @@
 	color: whitesmoke;
 	padding: inherit;
 	text-align: center;
-	vertical-align: middle;
+
 	width: 100%;
 }
 
@@ -110,7 +118,6 @@
 	color: whitesmoke;
 	padding: inherit;
 	text-align: center;
-	vertical-align: middle;
 	width: 100%;
 }
 
@@ -120,9 +127,11 @@
 }
 
 .params {
-	BORDER: 1PX SOLID;
+	/* BORDER: 1PX SOLID;*/
 	display: flex;
-    width: 100%;
+	width: 100%;
+	padding-top:1em;
+	padding-bottom:1em;
 }
 
 .params>p {
@@ -168,7 +177,7 @@
 
 .string_tune>input {
 	color: black;
-	vertical-align: middle;
+
 }
 
 .string_tune>input:focus {
@@ -177,10 +186,12 @@
 }
 
 .title {
-	BORDER: 1PX SOLID;
+	/* BORDER: 1PX SOLID;*/
 	margin: auto;
 	display: flex;
 	width: 100%;
+	padding-top:1em;
+	padding-bottom:1em;
 }
 
 .title>h2 {

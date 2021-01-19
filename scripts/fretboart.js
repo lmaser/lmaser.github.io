@@ -10,6 +10,9 @@ $(document).ready(function() {
     
         var intervals=['1','2b','2','3b','3','4','5b','5','6b','6','7b','7']; 
         var notes=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+
+        //modes parser
+        mode=mode.toLowerCase();
                        
         //scale parser
         scale=scale.split(' ');
